@@ -1,0 +1,132 @@
+#mainbody{
+	width:100%;
+}
+#zuo{
+height:100px;
+background-image: url(http://img.hb.aicdn.com/ec4f58ef0745ea43d55b7ccd9462eaf956a1695e1d295-YiuUiK_fw658);
+background-size: 50% 100px;
+background-repeat:repeat-x;
+position: relative;
+}
+#zui{
+	font-style: italic;
+    position:absolute;
+    bottom: 30px;
+    top: 30px;
+    left:50px;
+    font-size: 200%;
+}
+a{ text-decoration:none;
+}
+a:hover{ text-decoration:underline;}
+#you{
+	position:absolute;
+	top:30px;
+	bottom: 30px;
+	right:50px;
+	color: #cf4792;
+}
+.tubiao{
+	height: 20px;
+	width:20px;
+}
+#main{
+	overflow: scroll;
+	height:2000px;
+	background-image: url(http://img.hb.aicdn.com/5c5c5716d870edb763aada1d043783627c0bfac31b025-3DNeDY_fw658);
+	background-size: cover;
+}
+#left{
+	width: 400px;
+    position: absolute;
+    top:100px; 
+    height:600px;
+}
+h2{
+color:#c99;
+}
+#zjz{
+	height: 200px;
+	width:150px;
+}
+#xinxi{
+	position:absolute;
+	left:200px;
+	top:60px;
+	color:#c99;
+}
+#xingqu{
+	position:absolute;
+	top:320px;
+	width: 400px;
+	color:#c45689;
+}
+#middle{
+	margin:0 400px;
+	height:600px;
+}
+#right{
+	position: absolute;
+	top:100px;
+	right:0px;
+	width:400px;
+	height: 600px
+}
+#tupian{
+	overflow: hidden;
+	width:270px;
+	height:220px;
+	position: absolute;
+	top:60px;
+	right:10px;
+}
+#meitu{
+	width:300px;
+	height:800px;
+	position: absolute;
+	right:0px;
+	top:0px;
+}	
+#maowen{
+	position:absolute;
+	right:280px;
+	top:60px;
+	margin-left:50px;
+	font-weight: bold;
+	color: #cf4792;
+}
+#maoxu{
+	position:absolute;
+	top:280px;
+	right:20px;
+}
+#chunmao .mao{
+	list-style: none;
+	margin:10px;
+	color:#c99;
+}
+#ul1{
+	display: inherit;
+}
+#ul1 li.active{
+	font-style:bold;
+	float:left;
+	list-style: none;
+	margin:5px;
+	border: solid 2px #ccc;
+    color:#784596;
+	}
+  #gua div{border: 1px solid #7396B8;border-top: none;border-style: bold;}
+     #gua div li{height: 30px;line-height: 30px;text-indent: 8px;} 
+
+.hide{
+	border: solid 1px #999;
+	border-top:10px;
+	height: 200px;}
+.hide li {
+	list-style: none;
+	margin:20px;
+}
+.hide li a{
+	color: #c99;
+}

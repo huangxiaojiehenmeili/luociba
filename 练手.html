@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+<title>栈判断</title>
+<style type="text/css">
+
+</style>
+<body>
+<input type="text" id="haha" style="width: 200px">
+<button onclick="cl()">确定</button>
+<script type="text/javascript">
+
+function cl(){
+var input = document.getElementById("haha");
+var sth = stacktest(input.value);
+console.log(sth);
+}
+   
+
+  function stacktest(str){
+    var arr1 = str.split("");
+    var arr2 = [];
+    for(var i = 0;i < arr1.length; i++){
+        if(arr1[i] == "(" || arr1[i] == "[" || arr1[i] == "{"){
+            arr2.push(arr1[i]);
+        }
+        if(arr1[i] == ")" && arr2.pop() != "("){
+            return "false";
+        }
+        if(arr1[i] == "]" && arr2.pop() != "["){
+            return "false";
+        }
+        if(arr1[i] == "}" && arr2.pop() != "{"){
+            return "false";
+        }
+    }
+
+    if(arr2.length != 0){
+        return "false";
+    }
+    return true;
+}
+ </script>   
+
+</body>
+</html>

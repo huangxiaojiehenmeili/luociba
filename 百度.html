@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>动画基础</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+   <p id="message" >what a fuck!</p>
+   <p id="ss">wheel</p>
+   <p id="wrap">fuck you</p>
+<script src='addLoadEvent.js'></script>
+<script type="text/javascript"> 
+ function moveElement(elementID,final_x,final_y,interval){
+  var elem=document.getElementById(elementID);
+  var xpos=parseInt(elem.style.right);
+  var ypos=parseInt(elem.style.top);
+  if(xpos==final_x && ypos==final_y){
+    return true;
+  }
+  if(xpos<final_x){
+    xpos++;
+  }
+  if (xpos>final_x) {
+    xpos--;
+  }
+  if(ypos<final_y){
+    ypos++;
+  }
+  if(ypos>final_y){
+    ypos--;
+  }
+  elem.style.right=xpos+"px";
+  elem.style.top=ypos+"px";
+  var repeat="moveElement('"+elementID+"',"+final_x+","+final_y+","+interval+")";
+  movement=setTimeout(repeat,interval);
+ }
+ function positionMessage(){
+  var elem=document.getElementById('message');
+  elem.style.position='absolute';
+  elem.style.right='20px';
+  elem.style.top='30px';
+  var aa=document.getElementById('ss');
+  aa.style.position='absolute';
+  aa.style.right='130px';
+  aa.style.top='230px';
+   var dd=document.getElementById('wrap');
+  dd.style.position='absolute';
+  dd.style.right='100px';
+  dd.style.top='500px';
+
+  moveElement("message",200,100,10);
+  moveElement('ss',30,30,10);
+  moveElement('wrap',300,100,10);
+ }
+  addLoadEvent(positionMessage);
+
+</script>
+</body>
+</html>

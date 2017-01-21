@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>结构性伪类选择器—nth-last-child(n)</title>
+  <link href="项目二.css" rel="stylesheet" type="text/css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+</head> 
+<body>
+  <div id="header" style="position:relative;">
+   <div style="position:absolute;left:0px;bottom:14px;">
+    <img src="img\shu.jpg" style="margin-left:51px;">
+    <a href="javascript:" id="xinshijie">新世界</a>
+    <ul>
+      <li class="shou" id="shouye">首页</li>
+      <li class="shou">最新活动</li>
+      <li class="shou" >项目介绍</li>
+      <li class="shou">爱心社区</li>
+      <li class="shou">关于我们</li>
+    </ul>
+    <div id="shoubu">
+      <img src="img\denglu.jpg"><a id="denglu"> 登录</a>
+    </div>
+   </div>
+  </div>
+  <div id="mainbody" >
+     <div id="one">
+        
+           <p id="time">Time of new life</p>
+           <p id="xin">新时代，年轻的人们让我们一起 <br> 体验新生活，享受新生活</p>
+          <input type="button" name="tiyan" value="开始体验" id="butt">
+         <div id="biaoqian">
+             <ul id="bu">
+              <li ><img src="img\c.jpg" class="biao"></li>
+              <li ><img src="img\b.jpg" class="biao"></li>
+               <li ><img src="img\a-1.jpg" class="biao"></li>
+                <li ><img src="img\d.jpg" class="biao"></li>
+              </ul>
+             <ul id="ken" >
+                <li class="yao">打造全新世界观，让你更 <br>爱你的生活</li>
+                <li  class="yao">丰富多彩的公益活动，发<br> 挥新世界的主人公意识</li>
+                <li  class="yao">时尚的新理念，超前体验<br> 未知的生活</li>
+                <li  >完善的培养机制，培养你<br> 全新的世界观</li>
+             </ul>
+         </div>
+         <div style="clear:both;"></div>
+     </div>
+
+     <div id="two">
+     <img src="img\shuda.jpg">
+     <p>关于新世界，你还不知道有什么</p>
+     </div>
+     <div id="three">
+        <p id="aa">查找新世界<u>城</u>市活动信息</p>
+        <p id="bb" >每个城市的有不同的活动信息，请自主查询您所需要了解的城市</p>
+        <select id="lil">
+           <option selected="true">中国</option>
+        </select>
+        <select value="省份" id="lol" size="6" style="height:100px">
+           <option selected="true"  hidden="true" >省份</option>
+           <option class="xuan" onmouseover="aa(this)" onmouseout="bb(this)">北京市</option>
+           <option class="xuan"  onmouseover="aa(this) "onmouseout="bb(this)">天津市</option>
+           <option class="xuan"  onmouseover="aa(this)" onmouseout="bb(this)">河北省</option>
+           <option class="xuan"  onmouseover="aa(this)" onmouseout="bb(this)">陕西省</option>
+           <option class="xuan"  onmouseover="aa(this)" onmouseout="bb(this)">内蒙古自治区</option>
+           <option class="xuan"  onmouseover="aa(this)" onmouseout="bb(this)")>辽宁省</option>
+        </select>
+        <select id="lll">
+           <option selected="true">城市</option>
+        </select>
+     </div>
+     <div id="four">
+         <div id="pic-one">
+           <img src="img\a1.jpg" >
+           <p><b>北京活动</b><br>新社区大联盟</p>
+        </div>
+        <div id="pic-two">
+        <p><span>上海活动</span><br>夜上海新景观探索</p>
+        <img src="img\bb.jpg" >
+        </div>
+        <div id="pic-thr">
+        <img src="img\cc.jpg" >
+        <p><b>深圳活动</b><br>全新海岸线观点站</p>
+        </div>
+        <div  id="pic-four">
+        <img src="img\dd.jpg">
+        <p><b>香港活动</b><br>奢侈消费大派送</p>
+        </div>
+     </div>
+     <div id="five">
+       <div id="zuo">
+         <p id="para-one">新世界</p>
+         <p id="para-two">TIME</p>
+         <p id="para-thr">@新世界－北京<br> 2016.04.01</p>
+       </div>
+       <div id="you">
+          <h3>新世界</h3>
+          <p>新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界</p>
+          <button>更多详情</button>
+          <ul>
+          <li id="chet"> </li>
+          <li class="dott"> </li>
+          <li class="dott"> </li>
+          </ul>
+         </div>
+       </div>
+       <div id="six">
+         <div id="left">
+         <p>新时代<br> 关于爱<u>生活</u>的我们</p>
+         <button>查看更多</button>
+         </div>
+         <div id="middle">
+          <p>新时代<br> 关于爱<u>生活</u>的我们</p>
+         <button>查看更多</button>
+         </div>
+         <div id="right">
+         </div>
+       </div>
+       <div id="seven">
+          <div id="top">
+            <h3>成为我们的志愿者</h3>
+            <p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情<br> 那就不要犹豫，快来加入我们，成为改变所有人生活的人 </p>
+           </div>
+           <div id="bottom">
+             <div id="chep">
+                <b>新世界志愿者协议</b>
+                <p>加入新世界志愿者的人员必须遵守中华人民共共和国的 相关法律法规，并且本着平等资源的原则 ......</p>
+                <b>新世界志愿者权利</b>
+                <p>加入新世界志愿者的人员必须遵守中华人民共共和国的 相关法律法规，并且本着平等资源的原则 ...... 副本</p>
+                <b>更多条款</b>
+             </div>
+             <div id="exp">
+                <input type="text" name="" value="姓名：" class="pop">
+                <input type="text" name="" value="年龄：" class="pop">
+                <input type="text" name="" value="地址：" class="pop">
+                <input type="text" name="" value="联系方式：" class="pop">
+                <textarea cols="94px" rows="7">请简单描述下你梦想的生活：</textarea>
+                <button style="font-size:14px;color: #231815;width:585px;height:40px;border:none;background-color: rgba(193,193,204,0.3);margin:6px 6px 6px 0;">提交申请</button>
+             </div>
+           </div>
+       </div>
+  </div>
+  <div id="footer">
+     <div id="leader">
+     <h3>联系我们</h3>
+     <p>为了更好的获取我们最新的产品资讯，<br>您可以留下您的电子邮箱快速订阅我们的产品资讯 也可以通过以下任何方式关注我们动态</p>
+     <input type="text" name="" value="someone@email.com" style="width:440px;height:40px;color:#aaa;font-size:14px;margin:30px 0 0 0;border:none:">
+     <input type="submit" name="" value="提交" style="width:45px;height:40px;margin:30px 0 0 0 ;border:none;background-color:#aaa;">
+    <div style="margin:35px 0"> <i class="fa fa-qq"></i>&nbsp&nbsp<i class="fa fa-weibo "></i>&nbsp&nbsp<i class="fa fa-twitter"></i>&nbsp&nbsp<i class="fa fa-internet-explorer"></i></div>
+     </div>
+     <div id="rush">
+        <p id="lock">@2016新世界</p><p id="lick">Back to top</p>
+     </div>
+  </div>
+  <script type="text/javascript" src="F:\js代码\项目二.js"></script>
+</body>
+</html>
